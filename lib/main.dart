@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/home_page.dart';
+import 'package:flutter_catalog/Pages/home_page.dart';
+import 'package:flutter_catalog/Pages/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,16 +11,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
-    // double value = 30.9;
+    return MaterialApp(
+      //home: HomePage(), //Same as "/" Route
+      routes: {
+        "/" : (context)=> LoginPage(),
+        "/login": (Context) => LoginPage()
+      },
+    );
+  }
+}
+
+
+// double value = 30.9;
     // String name = "CodePur";
     // bool isMale = true;
     // num temp = 30.9;
     // var a = "Adeeb";
     // const pi = 3.14; // Can't change
-
-    return MaterialApp(
-      home: HomePage(),
-    );
-  }
-}
