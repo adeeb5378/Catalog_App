@@ -18,8 +18,10 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.lato().fontFamily,
         
       ),
+      //debugShowCheckedModeBanner: false,
       routes: {
         //home: HomePage(), //Same as "/" Route
+        "/" : (context) => LoginPage(),
         myRoutes.homeRoute : (context) => HomePage() ,
         myRoutes.loginRoute:(context)=>LoginPage()
       },
