@@ -1,11 +1,8 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/Pages/home_page.dart';
 import 'package:flutter_catalog/Pages/login_page.dart';
 import 'package:flutter_catalog/utills/routes.dart';
 import 'package:flutter_catalog/widgets/Themes.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
